@@ -1,0 +1,54 @@
+/* Seção onde não há interferência de modo */
+.limita-secao{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.limita-secao img {
+    height: 150px;
+}
+
+.btn-toggle img {
+    height: 30px;
+}
+
+header {
+    width: 100%;
+}
+
+/* Seção onde há interferência de modo */
+
+.desligado .limita-secao .btn-toggle {
+    width: 11%;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid burlywood;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.ligado {
+    background-color: rgb(36, 33, 33);
+    color: #fff;
+}
+
+.ligado .limita-secao .btn-toggle {
+    width: 11%;
+    cursor: pointer;
+    background-color: rgb(36, 33, 33);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid burlywood;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
