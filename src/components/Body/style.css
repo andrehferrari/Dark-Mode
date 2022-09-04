@@ -1,10 +1,11 @@
 .secao-capa img {
     width: 100%;
-    height: 50vh;
     object-fit: cover;
+    height: 42vh;
 }
 
 .secao-principal {
+    height: 42vh;
     max-width: 1024px;
     margin: 0 auto;
     padding: 60px 10px;
@@ -18,17 +19,16 @@ h1 {
 .primeiro-paragrafo {
     font-weight: bold;
     font-size: 19px;
-    margin: 15px 0px;
+    margin: 30px 0px;
 }
 
 .segundo-paragrafo {
-    height: 100%;
     font-size: 19px;
-    margin: 15px 0px;
+    margin: 30px 0px;
 }
 
+/* Estilização onde o dark mode é aplicado */
 .desligado {
-    height: 100%;
     background-color: #fff;
     color: #000;
 }
@@ -38,7 +38,39 @@ h1 {
     color: #fff;
 }
 
-span {
-    font-size: 50px;
-    color: burlywood;
+@media (max-width: 540px) {
+    .secao-capa {
+        padding: 10px 0px;
+    }
+
+    .secao-principal{
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .primeiro-paragrafo {
+        font-size: 16px;
+    }
+
+    .segundo-paragrafo {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .secao-capa {
+        padding: 35px 0px;
+    }
+
+    .secao-principal{
+        padding: 30px 10px;
+    }
+
+    .segundo-paragrafo {
+        padding-bottom: 20px;
+    }
 }

@@ -7,7 +7,6 @@ function App() {
 
   const [darkMode, setDarkMode] = useState('desligado')
 
-
   return (
     <div className="App">
       <Header

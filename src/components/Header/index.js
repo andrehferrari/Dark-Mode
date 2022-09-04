@@ -18,7 +18,7 @@ function Header(props) {
   return (
     <header className={props.modo}>
         <div className="limita-secao">
-            <img src={logo}/>
+            <img src={logo} className="logo" />
             <button 
             onClick={() => toggleMode()}
             className="btn-toggle">
